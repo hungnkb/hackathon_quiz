@@ -1,0 +1,62 @@
+[
+  {
+      "id": "6415c9049e6209d7eaf33aee",
+      "question": "1.Có một tàu điện đi về hướng nam. Gió hướng tây bắc. Vậy khói từ con tàu sẽ theo hướng nào?",
+      "content": [
+          "Đông",
+          "Tây",
+          "Bắc",
+          "Không hướng nào"
+      ],
+      "correct": 3,
+      "category_id": "6415c9009e6209d7eaf33aec"
+  },
+  {
+      "id": "6415c9059e6209d7eaf33aef",
+      "question": "2.Làm thế nào để không đụng phải ngón tay khi bạn đập búa vào một cái móng tay?",
+      "content": [
+          "Cầm búa bằng cả 2 tay ",
+          "Cầm búa bằng ta trái",
+          "Cầm búa bằng tay phải",
+          "Cầm búa bằng chân"
+      ],
+      "correct": 0,
+      "category_id": "6415c9009e6209d7eaf33aec"
+  },
+  {
+      "id": "6415c9059e6209d7eaf33af0",
+      "question": "3.Miệng rộng lớn nhưng không nói một từ, là con gì?",
+      "content": [
+          "con cá voi",
+          "con khỉ đột",
+          "con sông",
+          "con voi"
+      ],
+      "correct": 2,
+      "category_id": "6415c9009e6209d7eaf33aec"
+  },
+  {
+      "id": "6415c9069e6209d7eaf33af1",
+      "question": "4.Có bao nhiêu chữ C trong câu sau: 'Cơm, canh, cá, tất cả em đều thích'?",
+      "content": [
+          "1",
+          "2",
+          "4",
+          "5"
+      ],
+      "correct": 0,
+      "category_id": "6415c9009e6209d7eaf33aec"
+  },
+  {
+      "id": "6415c9079e6209d7eaf33af2",
+      "question": "5.Loại nước giải khát nào chứa Canxi và Sắt?",
+      "content": [
+          "Coca",
+          "Pepsi",
+          "Cafe",
+          "Sinh tố"
+      ],
+      "correct": 2,
+      "category_id": "6415c9009e6209d7eaf33aec"
+  }
+]

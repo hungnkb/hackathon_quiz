@@ -1,0 +1,51 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "mongodb"
+  url      = env("DATABASE_URL")
+}
+
+model User {
+  id          String          @id @default(auto()) @map("_id") @db.ObjectId
+  username    String          @unique
+  password    String
+  role        Role            @default(User)
+  score       Score[]
+  category    Category[]
+}
+
+enum Role {
+  User
+  Admin
+}
+
+model Score {
+  id          String          @id @default(auto()) @map("_id") @db.ObjectId
+  user        User            @relation(fields: [user_id], references: [id])
+  user_id     String          @db.ObjectId
+  score       Int?
+  duration    Int?
+}
+
+model Category {
+  id          String          @id @default(auto()) @map("_id") @db.ObjectId
+  name        String          
+  question    Question[]      
+  user        User            @relation(fields: [user_id], references: [id])
+  user_id     String          @db.ObjectId
+}
+
+model Question {
+  id          String          @id @default(auto()) @map("_id") @db.ObjectId
+  question    String        
+  content     Json
+  correct     Int         
+  category    Category        @relation(fields: [category_id], references: [id])
+  category_id String          @db.ObjectId
+}
+
